@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 70vw;
+    margin: auto;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+.nav_fixed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 218px 10px 218px;
+    
+}
+
+.nav_left{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+}
+.buttonMorron{
+    border: 1px solid maroon;
+    color: maroon;
+}
+.login{
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: maroon;
+}
+.banner{
+    background-image: url('../imagem/banner_inicial.jpeg');
+    background-position: center;
+    background-size: cover;
+    height:70vh;
+    margin: auto;
+    
+}
+.banner img{
+    width: 700px;
+    height: 350px;
+    margin: 100px -1000px;
+}
+.EfectImg{
+    margin: 100px 200px;
+}
+.nav_central{
+    background-color: maroon;
+    color: white;
+}
+ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    
+}
+li{
+    margin: 20px 20px 20px 0px;
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    color: wheat;
+}
+.ul_2 img{
+    width: 30px;
+}
+.g1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.g2{
+    background-image: url('../imagem/IiabPiyDg.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    color: white;
+    padding-top: 190px;
+}
+.bloco_g2{
+    margin: 30px;
+    font-size: 30px;
+}
+.g3{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 15px;
+   margin-top: 40px;
+}
+.g4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    
+ }
+.box_g1{
+  background-image: url('../imagem/unha.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.box_g2{
+    background-image: url('../imagem/baton.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.box_g3 img{
+    width: 100%;
+    height: 50%;
+}
+.box_g3 h1,h5{
+    margin: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+@media (max-width:1090px) {
+    
+    .container{
+        width: 100vw;
+        margin:0px;
+    }
+    .banner{
+        height: 33vh;
+    }
+    .banner img{
+        width: 250px;
+        height: 150px;
+        margin: 0px;
+    }
+    .ul_2{
+        display: none;
+    }
+    .g2{
+        padding-top: 10px;
+    }
+    .bloco_g2{
+        font-size: 18px;
+    }
+    .g3{
+        display: grid;
+        grid-template-columns:1fr;
+        
+     }
+     .g4{
+         display: grid;
+         grid-template-columns: 1fr;
+         gap: 5px;
+         
+      }
+      .nav_fixed{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        
+        transition: 0.3s;
+    }
+}
+@media (max-width:800px) {
+    ul{
+        flex-direction: column;
+    }
+}

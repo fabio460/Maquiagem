@@ -1,0 +1,15 @@
+function nav_fixed(){
+    if(scrollY>100){
+        document.querySelector('nav').classList.add('nav_fixed');
+    }
+    else{
+        document.querySelector('nav').classList.remove('nav_fixed');
+    }
+}
+window.addEventListener('scroll',nav_fixed);
+
+function aparecerImagem(){
+    document.getElementById('#texto_banner').classList.add('EfectImg');
+}
+window.setTimeout(aparecerImagem,1000);
+setTimeout(alert('teste função'),5000);
